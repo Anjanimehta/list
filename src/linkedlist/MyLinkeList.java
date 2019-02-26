@@ -1,6 +1,6 @@
+/*
 package linkedlist;
-
-public class MyLinkeList {
+ public class MyLinkeList {
     private  Node  head;
     private Node tail;
     private int CurrentSize;
@@ -48,8 +48,9 @@ public class MyLinkeList {
         tail=node
         else
 
-         */
+
 
         Node  node=new Node(10,null);
     }
 }
+*/

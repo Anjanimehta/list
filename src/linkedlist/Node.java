@@ -21,12 +21,13 @@ public class Node {
         return nxt;
 
     }
-    public Node setNxt(Node nxt)
-    {
-        this.nxt=nxt;
+
+    public void setNxt(Node nxt) {
+        this.nxt = nxt;
     }
 
     public Node(int data) {
+
         this.data = data;
     }
 
