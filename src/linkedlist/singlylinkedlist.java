@@ -8,6 +8,7 @@ public class singlylinkedlist {
         private  Node next;
         public int getdata()
         {
+            
             return data;
 
         }
