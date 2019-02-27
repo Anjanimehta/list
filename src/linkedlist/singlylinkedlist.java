@@ -102,6 +102,37 @@ public class singlylinkedlist {
             insertAfter(data, temp);
         }
     }
+    //new head is the next of previous head
+    //return type is int to tell which element got deleted
+    //helper method
+    private int removeHead()
+    {
+        int response=-1;
+        Node temp=this.head;//copy created
+        if(temp!=null)
+        {
+           this.size--;
+           this.head=this.head.next;
+        }
+         return response;
+    }
+    private int removeAfter(Node node)//node next to it will be removed       //remove after any position
+    {
+        int response=-1;
+        Node temp=node.next;
+        if(temp!=null)
+        {
+            response=temp.data;
+            node.next=temp.next;
+            size--;
+        }
+        return response;
+    }
+     //both helper method called hera
+    public int remove(int data)
+    {
+        
+    }
 }
 
 
