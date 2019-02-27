@@ -47,8 +47,8 @@ public class singlylinkedlist {
       //  for (int i = 0; i < 5; i++) {
             linkedlist.insert(42);
             linkedlist.insert(66);
-
-
+             System.out.println(linkedlist);
+             linkedlist.remove(66);
 
         //}
             System.out.println(linkedlist); 
@@ -131,8 +131,31 @@ public class singlylinkedlist {
      //both helper method called hera
     public int remove(int data)
     {
-        
+             int response=-1;
+             Node temp=this.head;
+              if(temp.data==data)
+              {
+                  response=removeHead();
+              }
+              else
+              {
+                  while(temp!=null)
+                  {
+                      if(temp.data==data)
+                      {
+                          response=removeAfter(temp);
+                          break;
+                      }
+                      temp=temp.next;
+                  }
+
+              }
+              return response;
     }
+
+
+
+
 }
 
 
