@@ -63,7 +63,7 @@ public class doublyLL {
     {
         boolean response=false;
         Node temp=head;
-        while(temp.next=null) {
+        while(temp!=null) {
             if (temp.data == node.data) {
                 response = true;
                 break;
@@ -85,5 +85,33 @@ public class doublyLL {
             head.previous=node;
             head=node;
         }
+        size++;
+    }
+    void deleteFromBegining()
+    {
+        System.out.println("deleting node"+head.data+"from begining");
+        head=head.next;
+        head.previous=null;
+    }
+
+    void insertBeforeNode(Node node,Node nodeBefore)
+    {
+        System.out.println("inserting node"+node.data+"before node"+nodeBefore.data);
+        Node temp=head;
+        while(temp!=null){
+            if (temp.data==nodeBefore.data)
+            {
+                temp.previous.next=node;
+                node.next=temp;
+                node.previous=temp.previous;
+                temp.previous=node;
+                break;
+            }
+            temp=temp.next;
+        }
+    }
+    void deleteBeforeNode(Node nodeBefore)
+    {
+
     }
 }
