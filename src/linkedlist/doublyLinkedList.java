@@ -21,10 +21,13 @@ public class doublyLinkedList {
         //head tail
         //head data nthng
         //single element ehich is tail nad head value of tail null ...head null
-
+        //head's pre:null
+        //tails's next:null
     }
 
     private int size = 0;
+    //first element of list is head and last elemt is tail
+    //but pre and next for a particular node
     private Node head = null;
     private Node tail = null;
 

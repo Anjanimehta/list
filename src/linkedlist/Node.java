@@ -1,7 +1,7 @@
 package linkedlist;
 
 import javax.xml.crypto.NodeSetData;
-
+/*
 public class Node {
     //commit ctrl+k
     //push ctrl+shift+k
@@ -43,3 +43,4 @@ public class Node {
         this.nxt=nxt;
     }
 }
+*/
